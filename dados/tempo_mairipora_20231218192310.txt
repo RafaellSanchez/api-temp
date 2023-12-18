@@ -1,0 +1,23 @@
+INFO DO TEMPO
+-------------
+Cidade: Mairiporã
+descição: céu limpo
+Temperatura: 29.129999999999995ºC
+data e hora: 2023-12-18 19:23:10
+Chuva: {'probabilidade_de_chuva': 0}
+------------
+            
+Informações base: ('coord', {'lon': -46.5867, 'lat': -23.3186})
+Informações base: ('weather', [{'id': 800, 'main': 'Clear', 'description': 'céu limpo', 'icon': '01d'}])
+Informações base: ('base', 'stations')
+Informações base: ('main', {'temp': 302.28, 'feels_like': 302.39, 'temp_min': 299.02, 'temp_max': 303.81, 'pressure': 1011, 'humidity': 45})
+Informações base: ('visibility', 10000)
+Informações base: ('wind', {'speed': 4.63, 'deg': 160})
+Informações base: ('clouds', {'probabilidade_de_chuva': 0})
+Informações base: ('dt', 1702927390)
+Informações base: ('sys', {'type': 1, 'id': 8379, 'country': 'BR', 'sunrise': 1702887351, 'sunset': 1702936189})
+Informações base: ('timezone', -10800)
+Informações base: ('id', 3458131)
+Informações base: ('name', 'Mairiporã')
+Informações base: ('cod', 200)
+------------
