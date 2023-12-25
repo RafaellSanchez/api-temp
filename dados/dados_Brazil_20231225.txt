@@ -1,0 +1,12 @@
+INFO DO PAIS
+-------------
+Pais: Brazil
+Capital: ['Brasília']
+Idioma: {'por': 'Portuguese'}
+Moeda: {'BRL': {'name': 'Brazilian real', 'symbol': 'R$'}}
+População: 212559409
+Região: Americas
+Time Zones: ['UTC-05:00', 'UTC-04:00', 'UTC-03:00', 'UTC-02:00']
+Area: 8515767.0
+            
+------------
