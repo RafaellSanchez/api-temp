@@ -3,8 +3,8 @@ import json
 from datetime import datetime
 import time
 import pandas as pd
-import shutil
 import os
+import zipfile
 
 
 
@@ -30,7 +30,6 @@ print(new_file)
 
 
 timestamp = datetime.now().strftime('%Y%m%d')
-# file = f'teste_api_{timestamp}.txt'
 path = '/workspaces/api-temp/dados/'
 
 destino = path + new_file
@@ -78,12 +77,21 @@ for root, dirs, files in os.walk(diretorio):
 
 if caminho_arquivo:
     print(f'Arquivo encontrado: {caminho_arquivo}')
-    print('Iniciando compactação atraves da lib Shutil')
-    time.sleep(3)
-    nome_sem_extensao = os.path.splitext(caminho_arquivo)[0]
-    shutil.make_archive(nome_sem_extensao, "zip", diretorio)
-    print('Arquivo compactado!')
+
+    nome_arquivo = os.path.basename(caminho_arquivo)  # Obtém somente o nome do arquivo, sem o caminho completo
+    nome_sem_extensao = os.path.splitext(nome_arquivo)[0]  # Remove a extensão do nome do arquivo
+
+    zip_file_name = f'/workspaces/api-temp/dados/{nome_sem_extensao}.zip'  # Nome do arquivo ZIP sem a extensão
     
+    try:
+        with zipfile.ZipFile(zip_file_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            zipf.write(caminho_arquivo, arcname=nome_arquivo)  # Usa o nome do arquivo original para arcname
+        print('Arquivo zipado com sucesso!')
+    except FileNotFoundError:
+        print('Arquivo não encontrado!')
+    except Exception as e:
+        print(f'Ocorreu um erro: {e}')
+
 
 else:
     print(f'Nenhum arquivo correspondente à palavra-chave "{palavra_chave}" foi encontrado no diretório {diretorio}.')
