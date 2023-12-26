@@ -1,0 +1,12 @@
+INFO DO PAIS
+-------------
+Pais: United States
+Capital: ['Washington, D.C.']
+Idioma: {'eng': 'English'}
+Moeda: {'USD': {'name': 'United States dollar', 'symbol': '$'}}
+População: 329484123
+Região: Americas
+Time Zones: ['UTC-12:00', 'UTC-11:00', 'UTC-10:00', 'UTC-09:00', 'UTC-08:00', 'UTC-07:00', 'UTC-06:00', 'UTC-05:00', 'UTC-04:00', 'UTC+10:00', 'UTC+12:00']
+Area: 9372610.0
+            
+------------
